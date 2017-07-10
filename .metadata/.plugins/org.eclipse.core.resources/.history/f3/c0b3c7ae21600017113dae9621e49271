@@ -1,0 +1,13 @@
+package co.com.view.main;
+
+public class ViewPropertyLoader extends PropertyLoader {
+
+	@Override
+	protected void loadResource() {
+		loadResource(resource);
+		
+	}
+	
+	
+
+}

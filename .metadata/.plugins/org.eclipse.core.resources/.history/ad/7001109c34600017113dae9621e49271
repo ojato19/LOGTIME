@@ -1,0 +1,22 @@
+package co.com.view.main;
+
+public class MainFrameLoaderInstance {
+	private static MainFrameLoaderInstance instance;
+
+	private MainFrameLoaderInstance() {
+	}
+
+	public static MainFrameLoaderInstance getMainFrameLoaderInstance() {
+		if(instance == null) {
+	         instance = new MainFrameLoaderInstance();
+		}
+		return instance;
+	}
+	
+	public MainFrameLoader getMainFrameLoader() {
+		
+		return null;
+		
+	}
+
+}

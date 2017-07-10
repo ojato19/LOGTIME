@@ -1,0 +1,8 @@
+package co.com.view.main;
+
+import java.util.Enumeration;
+
+public interface PropertyLoader {
+	public Enumeration<String> getProperties();
+	public String getProperty(StringBuilder key);
+}

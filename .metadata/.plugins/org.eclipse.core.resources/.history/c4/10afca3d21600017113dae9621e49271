@@ -1,0 +1,19 @@
+package co.com.view.main;
+
+import java.util.Enumeration;
+
+public class RBPropertyLoader implements PropertyLoader {
+
+	@Override
+	public Enumeration<String> getProperties() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getProperty(StringBuilder key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

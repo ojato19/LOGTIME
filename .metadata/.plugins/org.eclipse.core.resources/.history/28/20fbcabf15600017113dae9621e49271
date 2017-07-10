@@ -1,0 +1,6 @@
+package co.com.view.main;
+
+public interface MainFrameLoader {
+	public JFrame getMainFrame();
+
+}

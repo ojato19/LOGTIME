@@ -1,0 +1,15 @@
+package co.com.view;
+
+public class ViewPropertyLoader extends PropertyLoader {
+
+	private ViewPropertyLoader() {
+		loadResource("co.com.view.view");	
+	}
+	public ViewPropertyLoader
+	{
+		
+	}
+	
+	
+
+}

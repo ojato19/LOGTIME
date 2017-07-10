@@ -1,0 +1,26 @@
+package co.com.view;
+
+public class ViewPropertyLoader extends PropertyLoader {
+	protected static ViewPropertyLoader instance ;
+	
+	public static  String TEMPLATE_CLASS;
+	public static  String LANGUAGE;
+	public static  String LOCATION;
+	
+	
+
+	public static ViewPropertyLoader getPropertyLoaderInstance() {
+		return (ViewPropertyLoader)PropertyLoader.getPropertyLoaderInstance("co.com.view.view");
+		
+	}
+	
+	
+	protected static ViewPropertyLoader getPropertyLoaderInstance(String source) {
+		if(instance == null) {
+	         instance = new ViewPropertyLoader(source);
+		}
+		return instance;
+		
+	}
+
+}

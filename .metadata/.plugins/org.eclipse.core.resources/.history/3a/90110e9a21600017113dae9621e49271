@@ -1,0 +1,13 @@
+package co.com.view.main;
+
+public class ViewPropertyLoader extends PropertyLoader {
+
+	@Override
+	protected void loadResource(StringBuilder resource) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

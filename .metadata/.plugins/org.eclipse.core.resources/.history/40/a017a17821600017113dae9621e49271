@@ -1,0 +1,7 @@
+package co.com.view.main;
+
+public class RBPropertyLoader extends PropertyLoader {
+	
+	
+
+}

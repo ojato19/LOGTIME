@@ -1,0 +1,23 @@
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import co.com.view.main.MainFrameLoader;
+import co.com.view.main.MainFrameLoaderInstance;
+
+public class Main {
+	public static void main(String[] args) {
+		javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                MainFrameLoader frameLoader = MainFrameLoaderInstance.getMainFrameLoader();
+              //Create and set up the window.
+                JFrame frame = frameLoader.getMainFrame();
+                //Desplegar la ventana con las caracteristicas ya expuestas.
+                frame.pack();
+                frame.setVisible(true);
+            }
+        });
+	}
+
+	
+
+}

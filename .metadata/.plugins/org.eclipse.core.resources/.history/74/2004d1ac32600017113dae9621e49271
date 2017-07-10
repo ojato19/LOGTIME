@@ -1,0 +1,15 @@
+package co.com.view.templates.bluesky;
+
+import javax.swing.JFrame;
+
+import co.com.view.main.MainFrameLoader;
+
+public class BlueSkyFrame implements MainFrameLoader {
+
+	@Override
+	public JFrame getMainFrame() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

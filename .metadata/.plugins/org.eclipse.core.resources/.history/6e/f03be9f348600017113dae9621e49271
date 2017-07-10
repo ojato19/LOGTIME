@@ -1,0 +1,25 @@
+package co.com.view.main;
+
+import co.com.view.ViewPropertyLoader;
+
+public class MainFrameLoaderInstance {
+	private static MainFrameLoaderInstance instance;
+	private ViewPropertyLoader properties = ViewPropertyLoader.getPropertyLoaderInstance();
+
+	private MainFrameLoaderInstance() {
+	}
+
+	public static MainFrameLoaderInstance getMainFrameLoaderInstance() {
+		if(instance == null) {
+	         instance = new MainFrameLoaderInstance();
+		}
+		return instance;
+	}
+	
+	public MainBaseLoader getMainFrameLoader() throws ClassNotFoundException {
+		Class aClass = Class.forName(ViewPropertyLoader.TEMPLATE_CLASS);
+		return (MainBaseLoader)aClass.newInstance();
+		
+	}
+
+}

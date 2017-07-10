@@ -1,0 +1,10 @@
+package co.com.view.main;
+
+public abstract class MainFrameLoaderInstance {
+	
+	public MainFrameLoader getMainFrameLoader() {
+		
+		return null;
+	};
+
+}

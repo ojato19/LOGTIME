@@ -1,0 +1,15 @@
+import co.com.view.main.MainFrameLoader;
+import co.com.view.main.MainFrameLoaderInstance;
+
+public class Main {
+	public static void main(String[] args) {
+		javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                MainFrameLoader frame = MainFrameLoaderInstance.getMainFrameLoader();
+            }
+        });
+	}
+
+	
+
+}

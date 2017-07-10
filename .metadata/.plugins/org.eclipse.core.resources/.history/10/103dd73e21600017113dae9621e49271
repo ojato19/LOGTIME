@@ -1,0 +1,8 @@
+package co.com.view.main;
+
+import java.util.Enumeration;
+import java.util.ResourceBundle;
+
+public class RBPropertyLoader extends PropertyLoader {
+
+}

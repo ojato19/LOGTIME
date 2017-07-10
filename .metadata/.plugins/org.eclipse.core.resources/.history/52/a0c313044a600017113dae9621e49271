@@ -1,0 +1,45 @@
+package co.com.view;
+
+public class ViewPropertyLoader extends PropertyLoader {
+	protected static ViewPropertyLoader instance;
+
+	private String templateClass;
+	private String language;
+	private String location;
+
+	private ViewPropertyLoader(String source) {
+		this.source = source;
+
+	}
+
+	public static ViewPropertyLoader getPropertyLoaderInstance() {
+		return (ViewPropertyLoader) getPropertyLoaderInstance("co.com.view.view");
+
+	}
+
+	private static ViewPropertyLoader getPropertyLoaderInstance(String source) {
+		if (instance == null) {
+			instance = new ViewPropertyLoader(source);
+		}
+		return instance;
+
+	}
+
+	protect void loadValues()
+	{
+		templateClass = instance.getProperty(new StringBuilder("template-class"));
+		language = instance.getProperty(new StringBuilder("language"));
+		location = instance.getProperty(new StringBuilder("location"));
+		
+	}
+	 protected String getProperty(StringBuilder key) {
+		String value = null;
+		if (bundle != null) {
+			value = bundle.getString(key.toString());
+		}
+		return value;
+	}
+
+	
+
+}

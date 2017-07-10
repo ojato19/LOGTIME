@@ -1,0 +1,24 @@
+package co.com.view.templates.bluesky;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import co.com.view.main.MainBaseLoader;
+
+public class BlueSkyFrame implements MainBaseLoader {
+
+	@Override
+	public JFrame getMainFrame() {
+		
+		JFrame frame = new JFrame("HelloWorldSwing");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        //Add the ubiquitous "Hello World" label.
+        JLabel label = new JLabel("Hello World");
+        frame.getContentPane().add(label);
+
+		
+		return frame;
+	}
+
+}

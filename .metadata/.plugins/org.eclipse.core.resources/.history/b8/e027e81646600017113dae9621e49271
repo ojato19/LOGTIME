@@ -1,0 +1,16 @@
+package co.com.view;
+
+public class ViewPropertyLoader extends PropertyLoader {
+
+	private ViewPropertyLoader() {
+			
+	}
+	
+	
+	public static ViewPropertyLoader getPropertyLoaderInstance() {
+		return (ViewPropertyLoader)PropertyLoader.getPropertyLoaderInstance("co.com.view.view");
+		
+	}
+	
+
+}

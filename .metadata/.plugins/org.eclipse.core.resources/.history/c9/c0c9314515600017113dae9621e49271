@@ -1,0 +1,9 @@
+package co.com.view.main;
+
+import javax.swing.JFrame;
+
+public interface MainFrameLoader {
+	
+	public JFrame loadFrame();
+
+}

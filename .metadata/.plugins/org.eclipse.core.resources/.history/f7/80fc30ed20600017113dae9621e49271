@@ -1,0 +1,21 @@
+package co.com.view.main;
+
+import java.util.Enumeration;
+import java.util.ResourceBundle;
+
+public abstract class PropertyLoader {
+	protected Enumeration<String> keys;
+	public void loadResource(StringBuilder resource) {
+		ResourceBundle bundle = ResourceBundle.getBundle(resource.toString());	
+		keys = bundle.getKeys();
+	}
+	
+	public Enumeration<String> getProperties(){
+		
+		
+	}
+	public String getProperty(StringBuilder key) {
+		
+		
+	}
+}
